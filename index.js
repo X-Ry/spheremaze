@@ -25,7 +25,7 @@ function init() {
     keyLight.position.set(-100, 0, 100);
     fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 100%, 75%)'), 0.75);
     fillLight.position.set(100, 0, 100);
-    backLight = new THREE.DirectionalLight(0xffffff, 0.5);
+    backLight = new THREE.DirectionalLight(0xffffff, 1);
     backLight.position.set(100, 0, -100).normalize();
     /* Model */
     var mtlLoader = new THREE.MTLLoader();
