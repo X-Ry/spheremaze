@@ -25,7 +25,7 @@ function init() {
     keyLight.position.set(-100, 0, 100);
     fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 100%, 75%)'), 0.75);
     fillLight.position.set(100, 0, 100);
-    backLight = new THREE.DirectionalLight(0xffffff, 1.0);
+    backLight = new THREE.DirectionalLight(0xffffff, 0.5);
     backLight.position.set(100, 0, -100).normalize();
     /* Model */
     var mtlLoader = new THREE.MTLLoader();
@@ -44,7 +44,7 @@ function init() {
             console.log(box.min, box.max, box.getSize());
             object.translateY(-box.max.y/4);
             object.translateZ(-box.max.y/2);
-            object.scale.set(1,0.5,0.5)
+            object.scale.set(0.5,0.5,0.5)
            
             scene.add(object);
         });
