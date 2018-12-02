@@ -44,7 +44,7 @@ function init() {
             console.log(box.min, box.max, box.getSize());
             object.translateY(-box.max.y/4);
             object.translateZ(-box.max.y/2);
-            object.scale.set(0.5,0.5,0.5)
+            object.scale.set(1,0.5,0.5)
            
             scene.add(object);
         });
